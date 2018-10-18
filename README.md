@@ -5,6 +5,9 @@ Image capturing app. Can be modified into many things, but v1 will be capture of
 
 ### Updates
 
+#### Day 3. October 18
+Plan of attack: threshold image, translate into txt document – after that, can easily transform this with a natural language processing program. Need to find appropriate libraries for this.
+
 #### Day 2. October 15
 Able to threshold image. Simply imported cv2 library, used .threshold() method to threshold the image in a binary fashion (below threshold = white, above threshold = black) and saved it using imwrite(). Thresholds for a screen picture vs a paper picture were very different, by about 100. Was not able to work on it on October 16 because math and robotics. 
 
