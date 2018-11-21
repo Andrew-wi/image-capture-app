@@ -4,7 +4,7 @@ import cv2
 img = cv2.imread('/Users/andrewwinnicki/desktop/camera.png', 0)
 
 #threshold the image (built-in cv2 method)
-ret, threshed = cv2.threshold(img, 115, 255, cv2.THRESH_BINARY)
+threshed = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
 #for mobile screen, lower thresh = 215 works well
 #for paper, lower thresh = 
 
